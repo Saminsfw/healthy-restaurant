@@ -6,12 +6,14 @@
   margin: 0;
   font-family: Poppins;
 }
+body {
+  margin: 0 8% 0 8%;
+}
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
-  /* padding: 0 185px 0 147px; */
   margin-bottom: 61px;
 }
 .logo-section {
@@ -21,7 +23,6 @@ header {
 }
 .navbar {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 48px;
 }
@@ -32,13 +33,13 @@ header {
 }
 .hero-section {
   display: flex;
-  justify-content: center;
-  /* padding: 0 209px 0 159px; */
   gap: 78px;
+  justify-content: center;
 }
 .dish-container {
-  max-width: 230px;
+  max-width: 22%;
   text-align: right;
+  margin-top: 16px;
 }
 .dish-name {
   font-size: 14px;
@@ -48,8 +49,11 @@ header {
   font-size: 13px;
   color: #dad8d7;
 }
+.left {
+  flex-basis: 50%;
+}
 .right {
-  max-width: 411px;
+  flex-basis: 30%;
   display: flex;
   gap: 5px;
   flex-direction: column;
@@ -72,7 +76,7 @@ header {
   padding: 17px 28px;
   border-radius: 8px;
   background-color: #f4511f;
-  max-width: 141px;
+  max-width: fit-content;
 }
 .shapes {
   display: flex;
@@ -95,8 +99,7 @@ header {
 }
 .left .square {
   position: relative;
-  left: 230px;
-  bottom: 10px;
+  left: 26%;
   width: 8px;
   height: 8px;
 }
