@@ -14,12 +14,12 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  margin-bottom: 61px;
+  margin-bottom: 60px;
 }
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
 }
 .navbar {
   display: flex;
@@ -28,12 +28,12 @@ header {
 }
 .nav-button {
   border-radius: 24px;
-  padding: 9px 24px;
+  padding: 8px 24px;
   background-color: #f4511f;
 }
 .hero-section {
   display: flex;
-  gap: 78px;
+  gap: 80px;
   justify-content: center;
 }
 .dish-container {
@@ -67,13 +67,13 @@ header {
   line-height: 70px;
 }
 .hero-subtext {
-  margin: 34px 0 42px 0;
+  margin: 32px 0 40px 0;
   color: #dad8d7;
 }
 .hero-button,
 .about-button,
 .discount-button {
-  padding: 17px 28px;
+  padding: 18px 28px;
   border-radius: 8px;
   background-color: #f4511f;
   max-width: fit-content;
@@ -83,7 +83,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-top: 85px;
+  margin-top: 84px;
   margin-bottom: 121px;
 }
 .rectangle {
@@ -108,7 +108,7 @@ header {
   text-align: center;
 }
 .services-data {
-  margin: 70px 0 110px 0;
+  margin: 72px 0 112px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +133,7 @@ header {
 }
 .about {
   display: flex;
-  gap: 153px;
+  gap: 152px;
   justify-content: center;
   margin-bottom: 168px;
 }
@@ -144,16 +144,16 @@ header {
 }
 .about-title {
   font-size: 36px;
-  margin: 59px 0 12px 0;
+  margin: 60px 0 12px 0;
 }
 .about-description {
-  max-width: 395px;
+  max-width: 396px;
 }
 button {
   border: 0;
 }
 .menu-section {
-  margin-bottom: 225px;
+  margin-bottom: 224px;
 }
 .menu-title,
 .arrivals-title {
@@ -174,7 +174,7 @@ button {
 }
 .item-category {
   font-size: 12px;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 .menu-item {
   display: flex;
