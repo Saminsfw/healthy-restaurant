@@ -6,39 +6,40 @@
   margin: 0;
   font-family: Poppins;
 }
+body {
+  margin: 0 8% 0 8%;
+}
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0 185px 0 147px;
-  margin-bottom: 61px;
+  margin-bottom: 60px;
 }
 .logo-section {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
 }
 .navbar {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 48px;
 }
 .nav-button {
   border-radius: 24px;
-  padding: 9px 24px;
+  padding: 8px 24px;
   background-color: #f4511f;
 }
 .hero-section {
   display: flex;
+  gap: 80px;
   justify-content: center;
-  padding: 0 209px 0 159px;
-  gap: 78px;
 }
 .dish-container {
-  max-width: 230px;
+  max-width: 22%;
   text-align: right;
+  margin-top: 16px;
 }
 .dish-name {
   font-size: 14px;
@@ -48,8 +49,11 @@ header {
   font-size: 13px;
   color: #dad8d7;
 }
+.left {
+  flex-basis: 50%;
+}
 .right {
-  max-width: 411px;
+  flex-basis: 30%;
   display: flex;
   gap: 5px;
   flex-direction: column;
@@ -63,22 +67,23 @@ header {
   line-height: 70px;
 }
 .hero-subtext {
-  margin: 34px 0 42px 0;
+  margin: 32px 0 40px 0;
   color: #dad8d7;
 }
 .hero-button,
-.about-button {
-  padding: 17px 28px;
+.about-button,
+.discount-button {
+  padding: 18px 28px;
   border-radius: 8px;
   background-color: #f4511f;
-  max-width: 141px;
+  max-width: fit-content;
 }
 .shapes {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-top: 85px;
+  margin-top: 84px;
   margin-bottom: 121px;
 }
 .rectangle {
@@ -94,8 +99,7 @@ header {
 }
 .left .square {
   position: relative;
-  left: 230px;
-  bottom: 10px;
+  left: 26%;
   width: 8px;
   height: 8px;
 }
@@ -104,7 +108,7 @@ header {
   text-align: center;
 }
 .services-data {
-  margin: 70px 208px 110px 230px;
+  margin: 72px 0 112px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,9 +133,9 @@ header {
 }
 .about {
   display: flex;
-  gap: 153px;
+  gap: 152px;
   justify-content: center;
-  margin: 0 186px 184px 152px;
+  margin-bottom: 168px;
 }
 .about-left {
   display: flex;
@@ -140,11 +144,62 @@ header {
 }
 .about-title {
   font-size: 36px;
-  margin: 59px 0 12px 0;
+  margin: 60px 0 12px 0;
 }
 .about-description {
-  max-width: 395px;
+  max-width: 396px;
 }
 button {
   border: 0;
+}
+.menu-section {
+  margin-bottom: 224px;
+}
+.menu-title,
+.arrivals-title {
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.menu-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  row-gap: 100px;
+}
+.item-name {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.item-category {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.discount-section {
+  display: flex;
+  justify-content: center;
+  gap: 116px;
+  margin-bottom: 220px;
+}
+.discount-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.discount-info {
+  font-size: 24px;
+  text-align: center;
+}
+.discount-button {
+  margin-top: 30px;
+}
+.arrivals-section {
+  margin-bottom: 152px;
 }
