@@ -6,6 +6,9 @@
   margin: 0;
   font-family: Poppins;
 }
+a {
+  text-decoration: none;
+}
 body {
   margin: 0 8% 0 8%;
 }
@@ -16,6 +19,7 @@ header {
   height: 80px;
   margin-bottom: 60px;
 }
+
 .logo-section {
   display: flex;
   align-items: center;
@@ -37,7 +41,7 @@ header {
   justify-content: center;
 }
 .dish-container {
-  max-width: 22%;
+  max-width: 30%;
   text-align: right;
   margin-top: 16px;
 }
@@ -72,7 +76,8 @@ header {
 }
 .hero-button,
 .about-button,
-.discount-button {
+.discount-button,
+.news-button {
   padding: 18px 28px;
   border-radius: 8px;
   background-color: #f4511f;
@@ -99,7 +104,7 @@ header {
 }
 .left .square {
   position: relative;
-  left: 26%;
+  left: 29%;
   width: 8px;
   height: 8px;
 }
@@ -114,6 +119,7 @@ header {
   align-items: center;
   gap: 120px;
 }
+
 .service-item {
   display: flex;
   flex-direction: column;
@@ -164,7 +170,8 @@ button {
 .menu-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
+  max-width: 60%;
+  margin: 0 auto;
   align-items: center;
   row-gap: 100px;
 }
@@ -181,6 +188,26 @@ button {
   flex-direction: column;
   align-items: center;
 }
+.new-tag {
+  padding: 4px 8px;
+  background-color: #f4511f;
+  border-radius: 4px;
+  align-self: self-start;
+  font-size: 13px;
+}
+.premium-image {
+  width: 132px;
+  height: 132px;
+}
+.cart-image {
+  border-radius: 4px 4px 12px 4px;
+  background-color: #f4511f;
+  padding: 8px 8px 4px 4px;
+  position: relative;
+  bottom: 20px;
+  left: 130px;
+}
+
 .discount-section {
   display: flex;
   justify-content: center;
@@ -202,4 +229,259 @@ button {
 }
 .arrivals-section {
   margin-bottom: 152px;
+}
+.news-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 148px 0 160px 0;
+}
+.news-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.news-description {
+  text-align: center;
+}
+.news-button {
+  margin-top: 40px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 112px;
+}
+.footer-logo {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-menu-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.footer-submenu {
+  color: #dad8d7;
+  font-size: 14px;
+}
+.footer-logo img {
+  padding-bottom: 2px;
+}
+.copyright-text {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1px) and (max-width: 460px) {
+  .logo-section p {
+    display: none;
+  }
+  body {
+    margin: 0 4%;
+  }
+  .hero-section {
+    flex-direction: column;
+  }
+  .navbar {
+    gap: 22px;
+  }
+  .navbar button {
+    font-size: 16px;
+  }
+  .arrivals-section .menu-list {
+    grid-template-columns: 1fr;
+    max-width: 75%;
+  }
+  .about .about-right {
+    display: none;
+  }
+  .dish-container {
+    max-width: 44%;
+  }
+  .left .square {
+    left: 42.5%;
+  }
+  .right {
+    flex-basis: 50%;
+  }
+  .left img {
+    flex-shrink: 0;
+  }
+  .hero-text {
+    font-size: 58px;
+  }
+  .menu-section .menu-list {
+    grid-template-columns: 1fr;
+  }
+  .item-name {
+    font-size: 28px;
+  }
+  .menu-list .item-name {
+    font-size: 26px;
+  }
+  .menu-list .item-category {
+    font-size: 18px;
+  }
+  .menu-list .premium-image {
+    width: 260px;
+    height: 260px;
+  }
+  .menu-list .cart-image {
+    width: 40px;
+    left: 140px;
+  }
+  .discount-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 160px;
+  }
+  .discount-section img {
+    width: 350px;
+    height: 350px;
+  }
+  body button {
+    font-size: 20px;
+  }
+  .dish-container {
+    max-width: 44%;
+  }
+  .left .square {
+    left: 42.5%;
+  }
+  .about .about-description {
+    font-size: 18px;
+  }
+  body .menu-section {
+    margin-bottom: 170px;
+  }
+  .menu-list .new-tag {
+    font-size: 18px;
+  }
+  .news-section .news-description {
+    font-size: 18px;
+  }
+  .dish-name {
+    font-size: 18px;
+  }
+  .right,
+  .about-left,
+  .footer-menu {
+    align-items: center;
+  }
+  .service-description,
+  .hero-subtext {
+    font-size: 17px;
+  }
+  .dish-description {
+    font-size: 16px;
+  }
+  .services-section .services-data {
+    flex-direction: column;
+  }
+  .service-item .service-title {
+    font-size: 21px;
+  }
+  .copyright-text {
+    font-size: 14px;
+  }
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-logo {
+    justify-content: center;
+  }
+}
+@media (max-width: 1280px) and (min-width: 461px) {
+  .menu-section .menu-list {
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+  }
+  .item-name {
+    font-size: 28px;
+  }
+  .about img {
+    width: 300px;
+  }
+  body {
+    margin: 0 4% 0 4%;
+  }
+  .hero-text {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .about {
+    gap: 4px;
+    align-items: center;
+  }
+  .arrivals-section .menu-list {
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+  }
+  .menu-list .item-name {
+    font-size: 26px;
+  }
+  .menu-list .item-category {
+    font-size: 18px;
+  }
+  .menu-list .premium-image {
+    width: 200px;
+    height: 200px;
+  }
+  .menu-list .cart-image {
+    width: 40px;
+    left: 150px;
+  }
+  .navbar {
+    gap: 34px;
+  }
+  body button {
+    font-size: 18px;
+  }
+  .dish-container {
+    max-width: 44%;
+  }
+  .left .square {
+    left: 42.5%;
+  }
+  .right {
+    flex-basis: 50%;
+  }
+  .left img {
+    width: 360px;
+  }
+  .about .about-description {
+    font-size: 18px;
+  }
+  body .menu-section {
+    margin-bottom: 170px;
+  }
+  .menu-list .new-tag {
+    font-size: 18px;
+  }
+  .news-section .news-description {
+    font-size: 22px;
+  }
+  .services-data {
+    flex-wrap: wrap;
+  }
+  .service-description {
+    font-size: 17px;
+  }
+  .service-item .service-title {
+    font-size: 21px;
+  }
+  .discount-section {
+    margin-bottom: 176px;
+  }
 }
